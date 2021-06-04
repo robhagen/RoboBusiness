@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+@font-face {
+    font-family: Robo_font;
+    src: url(Robot_Font.otf);
+  }
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+#navbar {
+    display: flex;
+    height: 2em;
+    background: white;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Robo_font;
+}
+
+.logo {
+    height: 2em;
+    margin: 1em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu > a {
+    margin: 0.5em;
+}
+
+#div_intro {
+    display: flex;
+    height: 100vh;
+    background: black;
+    justify-content: space-around;
+}
+
+#introtext {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    color: white;
+    border: 1px solid black;
+}
+
+.intro_text_head {
+    display: flex;
+    flex: 1;
+    font-family: Robo_font;
+    font-size: 6em;
+}
+
+.intro_text_body_upper {
+    display: flex;
+    flex: 3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+
+.intro_text_body_lower {
+    display: flex;
+    flex: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+
+#cardmaker {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border: 1px solid black;
+}
+
+#div_businesscard {
+    display: flex;
+    height: 100vh;
+    background: purple;
+}
+
+#div_extrainfo {
+    display: flex;
+    height: 50vh;
+    background: black;
+}
+
