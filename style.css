@@ -24,35 +24,46 @@ html {
 
 #navbar {
     display: flex;
-    height: 2em;
-    background: white;
+    height: 3em;
     position: sticky;
     top: 0;
     justify-content: space-between;
+    align-items: flex-start;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%); 
 }
 
 #logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    font-family: Robo_font;
 }
 
 .logo {
+    filter: invert(1);
     height: 2em;
     margin: 1em;
+}
+
+#logotext {
+    font-family: Robo_font;
+    font-size: 25px;
+    color: white;
+    align-self: center;
 }
 
 .menu {
     display: flex;
     justify-content: space-around;
-    margin-right: 5em;
+    align-items: flex-start;
+    margin-right: 1em;
 }
 
 .menu > a {
-    margin: 0.5em;
+    margin: 1em;
     font-family: Robo_font;
+    font-size: 25px;
+    color: white;
 }
 
 #div_intro {
@@ -100,15 +111,22 @@ html {
     flex-direction: column;
     flex: 1;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2em;
     color: white;
+    border: 0px solid white;
+}
+
+#cardmaker_image {
+    display: flex;
+    margin-bottom: 5em;
     border: 0px solid white;
 }
 
 #userinput {
     display: flex;
     margin: 2em;
+    font-size: 15px;
 }
 
 .button {
@@ -126,9 +144,27 @@ html {
 
 #div_businesscard {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%); 
+    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%);
+    border: 0px solid white;
+}
+
+#generated_card {
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    background: rgb(107, 107, 107);
+    border: 3px solid white;
+    border-radius: 3%;
+}
+
+#card_image {
+    display: flex;
+    width: 5em;
+    height: 5em;
 }
 
 #div_extrainfo {

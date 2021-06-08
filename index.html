@@ -11,7 +11,7 @@
                 <div id="navbar">
                     <div id="logo">
                         <img class="logo" src="pngegg.png"></img>
-                        <p>RoboBusiness</p>
+                        <p id="logotext">RoboBusiness</p>
                     </div>
                     <div class="menu">
                         <a href="#home">Home</a>
@@ -33,14 +33,18 @@
                     </div>
 
                     <div id="cardmaker">
+                        <image id="cardmaker_image" src="#"></image>
                         <input type="text" id="userinput">
-                        <a href="#businesscard" id="button_userinput" class="button">Submit</a>
+                        <button id="button_userinput">Submit!</button>
                     </div>
                 </div>
 
+                <a name="businesscard"></a>
                 <div id="div_businesscard">
-                    <a name="businesscard"></a>
-                    <img id="card_image" src="https:robohash.org/rob">
+                    <div id="generated_card">
+                        <img id="card_image" src="https:robohash.org/rob">
+                        <span id="username"></span>
+                    </div>
                 </div>
 
                 <div id="div_extrainfo">
