@@ -12,6 +12,7 @@ button.onclick = function() {
     document.getElementById("card_image").src = ("https://robohash.org/" + userinput + "?size=200x200")
     document.getElementById("username").innerHTML = (userinput);
     goToAnchor();
+    generateTelephoneNumber();
 };
 
 /* This function simply moves the viewport to the anchor displaying the businesscard, is called at .onclick */
@@ -19,4 +20,9 @@ function goToAnchor(anchor) {
     document.location = '#businesscard';
     return false;
   }
+
+  let generateTelephoneNumber = () => {
+     number = fetch('http://www.randomnumberapi.com/api/v1.0/random?min=100&max=1000&count=1');
+    document.getElementById("telephonenumber").innerHTML = ("Telephone number: 06-" + number);
+  };
 
