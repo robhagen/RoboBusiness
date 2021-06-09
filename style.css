@@ -193,8 +193,21 @@ html {
 
 #generated_card_right {
     display: flex;
+    flex-direction: column;
     flex: 5;
     border: 1px solid white;
+}
+
+#basic_info {
+    display: flex;
+    flex: 6;
+    margin: 2em;
+}
+
+#links {
+    display: flex;
+    flex: 1;
+    margin: 2em;
 }
 
 #div_extrainfo {

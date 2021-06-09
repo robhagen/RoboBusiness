@@ -22,6 +22,7 @@ function goToAnchor(anchor) {
   }
 
   let generateTelephoneNumber = () => {
-    document.getElementById("telephonenumber").innerHTML = ("Telephone number: 06-");
+      let number = Math.floor(Math.random() * 99999999) + 11111111;
+    document.getElementById("telephonenumber").innerHTML = ("Telephone number: 06-" + number);
   };
 
