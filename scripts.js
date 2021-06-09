@@ -22,7 +22,6 @@ function goToAnchor(anchor) {
   }
 
   let generateTelephoneNumber = () => {
-     number = fetch('http://www.randomnumberapi.com/api/v1.0/random?min=100&max=1000&count=1');
-    document.getElementById("telephonenumber").innerHTML = ("Telephone number: 06-" + number);
+    document.getElementById("telephonenumber").innerHTML = ("Telephone number: 06-");
   };
 
