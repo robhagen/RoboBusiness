@@ -82,9 +82,10 @@ html {
     flex: 1;
     align-items: center;
     justify-content: center;
-    padding: 3em;
+    padding: 2em;
+    margin: 3em;
     color: white;
-    border: 1px solid black;
+    border: 0px solid black;
 }
 
 .intro_text_head {
@@ -115,6 +116,7 @@ html {
     align-items: center;
     justify-content: flex-start;
     padding: 2em;
+    margin: 3em;
     color: white;
     border: 0px solid white;
 }
@@ -141,6 +143,7 @@ html {
 
 #div_businesscard {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -153,6 +156,7 @@ html {
     display: flex;
     width: 50vw;
     height: 60vh;
+    margin-bottom: 2em;
     background: rgb(107, 107, 107);
     border: 3px solid white;
     border-radius: 3%;
