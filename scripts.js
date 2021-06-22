@@ -1,5 +1,6 @@
 let button_userInput = document.getElementById("button_userinput");
 let button_backToTop = document.getElementById("button_backToTop");
+let response = fetch('http://www.randomnumberapi.com/api/v1.0/random?min=100&max=1000&count=5');
 
 /* Gets the current date and time and coverts to a robot-headshot */
 let currentDate = new Date();
