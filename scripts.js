@@ -1,6 +1,5 @@
 let button_userInput = document.getElementById("button_userinput");
 let button_backToTop = document.getElementById("button_backToTop");
-let response = fetch('http://www.randomnumberapi.com/api/v1.0/random?min=100&max=1000&count=5');
 
 /* Gets the current date and time and coverts to a robot-headshot */
 let currentDate = new Date();
@@ -12,7 +11,7 @@ document.getElementById("cardmaker_image").src = ("https://robohash.org/" + curr
 button_userInput.onclick = function() {
     let userinput = document.getElementById("userinput").value
     document.getElementById("card_image").src = ("https://robohash.org/" + userinput + "?size=200x200")
-    document.getElementById("username").innerHTML = (userinput);
+    document.getElementById("card_username").innerHTML = (userinput);
     generateTelephoneNumber();
     goToAnchor("#businesscard");
 };

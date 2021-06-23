@@ -17,13 +17,13 @@ html {
     src: url(Halimun.ttf);
   }
 
-#hero {
+.hero {
     display: flex;
     flex-direction: column;
     width: 100vw;
 }
 
-#navbar {
+.navbar {
     display: flex;
     height: 3em;
     position: sticky;
@@ -34,7 +34,7 @@ html {
     background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%); 
 }
 
-#logo {
+.div_logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +46,7 @@ html {
     margin: 1em;
 }
 
-#logotext {
+.logotext {
     font-family: Robo_font;
     font-size: 25px;
     color: white;
@@ -68,15 +68,17 @@ html {
     color: white;
 }
 
-#div_intro {
+.div_intro {
     display: flex;
     height: 100vh;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%); 
+    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%);
+    border: 0px solid white; 
 }
 
-#introtext {
+.introtext {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -85,7 +87,7 @@ html {
     padding: 2em;
     margin: 3em;
     color: white;
-    border: 0px solid black;
+    border: 1px solid black;
 }
 
 .intro_text_head {
@@ -109,13 +111,13 @@ html {
     font-size: 1em;
 }
 
-#cardmaker {
+.cardmaker {
     display: flex;
     flex-direction: column;
     flex: 1;
     align-items: center;
     justify-content: flex-start;
-    padding: 2em;
+    padding: 0em;
     margin: 3em;
     color: white;
     border: 0px solid white;
@@ -123,7 +125,7 @@ html {
 
 #cardmaker_image {
     display: flex;
-    margin-bottom: 5em;
+    margin-bottom: 0em;
     border: 0px solid white;
 }
 
@@ -141,7 +143,7 @@ html {
     border-radius: 5px;
 }
 
-#div_businesscard {
+.div_businesscard {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,32 +154,37 @@ html {
     border: 0px solid white;
 }
 
-#generated_card {
+.generated_card {
     display: flex;
-    width: 50vw;
-    height: 60vh;
-    margin-bottom: 2em;
-    background: rgb(107, 107, 107);
+    flex-direction: column;
+    width: 350px;
+    height: 75vh;;
+    margin-top: 1em;
+    background: radial-gradient(circle, rgba(173,205,217,1) 47%, rgba(94,163,195,1) 100%);
     border: 3px solid white;
     border-radius: 3%;
 }
 
-#generated_card_left {
+.generated_card_top {
     display: flex;
     flex: 3;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid white;
+    border: 0px solid white;
 }
 
 #card_image {
     display: flex;
     max-width: 100%;
     height: auto;
+    margin-top: 1em;
+    background: white;
+    border: 5px solid black;
+    border-radius: 5%;
 }
 
-#username {
+#card_username {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -187,7 +194,7 @@ html {
     font-size: 120%;
 }
 
-#jobtitle {
+#card_jobtitle {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -195,29 +202,26 @@ html {
     font-size: 100%;
 }
 
-#generated_card_right {
+.generated_card_bottom {
     display: flex;
     flex-direction: column;
     flex: 5;
-    border: 1px solid white;
+    border: 0px solid white;
 }
 
-#basic_info {
+.basic_info {
     display: flex;
     flex: 6;
     margin: 2em;
 }
 
-#links {
+.div_links {
     display: flex;
     flex: 1;
     margin: 2em;
 }
 
-#div_extrainfo {
-    display: flex;
-    height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%); 
+.button_backToTop {
+    margin: 1em;
 }
 
