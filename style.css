@@ -9,18 +9,20 @@ html {
 
 @font-face {
     font-family: Robo_font;
-    src: url(Robot_Font.otf);
+    src: url(./fonts/Robot_Font.otf);
   }
 
   @font-face {
     font-family: Halimun;
-    src: url(Halimun.ttf);
+    src: url(./fonts/Halimun.ttf);
   }
 
 .hero {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 47%, rgba(20,46,60,1) 100%);
 }
 
 .navbar {
@@ -30,8 +32,6 @@ html {
     top: 0;
     justify-content: space-between;
     align-items: flex-start;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%); 
 }
 
 .div_logo {
@@ -72,22 +72,19 @@ html {
     display: flex;
     height: 100vh;
     justify-content: center;
-    align-items: flex-start;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%);
-    border: 0px solid white; 
+    align-items: center;
 }
 
 .introtext {
     display: flex;
     flex-direction: column;
     flex: 1;
-    align-items: center;
+    max-width: 40vw;
+    height: 70vh;
+    align-items: left;
     justify-content: center;
-    padding: 2em;
-    margin: 3em;
     color: white;
-    border: 1px solid black;
+    border: 0px solid rgb(255, 255, 255);
 }
 
 .intro_text_head {
@@ -99,26 +96,28 @@ html {
 
 .intro_text_body_upper {
     display: flex;
-    flex: 3;
+    flex: 1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2em;
 }
 
 .intro_text_body_lower {
     display: flex;
-    flex: 2;
+    flex: 1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .cardmaker {
     display: flex;
     flex-direction: column;
     flex: 1;
+    max-width: 40vw;
+    height: 70vh;
     align-items: center;
     justify-content: flex-start;
     padding: 0em;
-    margin: 3em;
+    margin: 0em;
     color: white;
     border: 0px solid white;
 }
@@ -149,9 +148,6 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(20,46,60,1) 100%);
-    border: 0px solid white;
 }
 
 .generated_card {
