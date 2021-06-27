@@ -53,19 +53,26 @@ html {
     align-self: center;
 }
 
-.menu {
+.div_menu {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     margin-right: 1em;
 }
 
-.menu > a {
+.menuLinks {
+    position: relative;
     margin: 1em;
     text-decoration: none;
     font-family: Robo_font;
     font-size: 25px;
     color: white;
+    border-bottom: solid 0px white;
+    transition: border-width 0.2s ease-in-out;
+}
+
+.menuLinks:hover {
+    border-width: 2px;
 }
 
 .div_intro {
@@ -80,7 +87,7 @@ html {
     flex-direction: column;
     flex: 1;
     max-width: 40vw;
-    height: 70vh;
+    height: 60vh;
     align-items: left;
     justify-content: center;
     color: white;
@@ -113,11 +120,9 @@ html {
     flex-direction: column;
     flex: 1;
     max-width: 40vw;
-    height: 70vh;
+    height: 60vh;
     align-items: center;
     justify-content: flex-start;
-    padding: 0em;
-    margin: 0em;
     color: white;
     border: 0px solid white;
 }
@@ -153,7 +158,8 @@ html {
 .generated_card {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 25vw;
+    min-width: 250px;
     height: 75vh;;
     margin-top: 1em;
     background: radial-gradient(circle, rgba(173,205,217,1) 47%, rgba(94,163,195,1) 100%);
@@ -184,10 +190,10 @@ html {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 1em;
+    margin: 0.5em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 120%;
+    font-size: 2em;
 }
 
 #card_jobtitle {
@@ -195,7 +201,8 @@ html {
     justify-content: center;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 100%;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .generated_card_bottom {
@@ -207,8 +214,13 @@ html {
 
 .basic_info {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 6;
-    margin: 2em;
+    margin-left: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .div_links {
@@ -217,7 +229,35 @@ html {
     margin: 2em;
 }
 
+.QRcode {
+    max-width: 40%;
+    height: auto;
+}
+
 .button_backToTop {
     margin: 1em;
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+    .div_logo {
+        display: none;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .intro_text_head {
+        font-size: 4em;
+    }
+    .intro_text_body_upper {
+        font-size: 1em;
+    }
+    .intro_text_body_lower {
+        font-size: 1em;
+    }
+    .div_intro {
+        align-items: flex-start;
+        margin-top: 2em;
+    }
+}
